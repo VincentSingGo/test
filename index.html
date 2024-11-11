@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo" id="mobile-logo"
+        ><img src="./20240422.png" alt=""
+      /></a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">首頁</a>
+        <a href="#services">服務項目</a>
+        <!-- <a href="#experience">新客體驗</a> -->
+        <a href="#price">價目表</a>
+        <a href="#reserve">我要預約</a>
+      </nav>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <img src="./20240422.png" alt="" />
+        <div class="homepage-text">
+          <h1>TestTest</h1>
+          <h3>TestTestTest<span class="multiple-text"></span></h3>
+          <p>TestTestTest TestTestTest TestTestTest TestTestTest</p>
+        </div>
+        <div class="social-media">
+          <a href="https://line.me/ti/p/fR6xklzFMu" target="_blank"
+            ><i class="fab fa-line"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/ciao.chiropractor/?_rdr"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/ciaoyu_bone/profilecard/?igsh=MTB0dGxsYjg4ZHc"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services" id="services">
+      <div class="services-content">
+        <h2 class="heading">Test <span>Test</span></h2>
+        <div class="circle-container">
+          <div class="circle">
+            <div class="circle-img">
+              <img src="main.png" alt="Image 1" />
+            </div>
+            <h3>Test Test</h3>
+            <p>Test Test</p>
+          </div>
+          <div class="circle">
+            <div class="circle-img">
+              <img src="qqq.png" alt="Image 2" />
+            </div>
+            <h3>Test Test</h3>
+            <p>Test Test</p>
+          </div>
+          <div class="circle">
+            <div class="circle-img">
+              <img src="sss.png" alt="Image 3" />
+            </div>
+            <h3>Test Test</h3>
+            <p>Test Test</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section class="price" id="price">
+      <h2 class="heading">Test <span>Test</span></h2>
+
+      <div class="price-container">
+        <div class="price-box">
+          <img src="./main.png" alt="" />
+          <div class="price-layer">
+            <h4>Test</h4>
+            <p>TestTestTestTestTestTestTest</p>
+            <a href="javascript:void(0);" onclick="openPopup(1)">查看價目表</a>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <img src="./main.png" alt="" />
+          <div class="price-layer">
+            <h4>Test</h4>
+            <p>TestTestTestTestTestTestTest</p>
+            <a href="javascript:void(0);" onclick="openPopup(2)">查看價目表</a>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <img src="./main.png" alt="" />
+          <div class="price-layer">
+            <h4>Test</h4>
+            <p>TestTestTestTestTestTestTest</p>
+            <a href="javascript:void(0);" onclick="openPopup(3)">查看價目表</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <img
+          id="popup-image"
+          src=""
+          alt="Popup Image"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+    </div>
+
+    <section class="reserve" id="reserve">
+      <h2 class="heading">立即 <span>預約</span></h2>
+      <div class="button-container">
+        <button onclick="showIframe()" class="booking-button">
+          點我立即預約
+        </button>
+      </div>
+      <div class="google-form-class" id="google-calendar" style="display: none">
+        <button onclick="hideIframe()" class="close-button">X</button>
+        <iframe
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ30a5TL09Q583w7qDqFnYsJuXkm_wY1RUG4bdeZzKZePI5h_kYWivitFM_JD1NIGVhulds-4gcf?gv=true"
+          style="border: 0"
+          width="100%"
+          height="700"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>2024 &#128822; by Vincnet Lei.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
+
+    <!-- icon js -->
+    <script
+      src="https://kit.fontawesome.com/9df5cd48aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

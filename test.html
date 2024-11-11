@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Circles with Images and Borders</title>
+<style>
+  /* 父容器，置中對齊所有圓形 */
+  .circle-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    gap: 20px; /* 圓形之間的間距 */
+    margin-top: 50px; /* 可調整整體位置 */
+  }
+
+  /* 圓形設置 */
+  .circle {
+    width: 20rem; /* 圓形的寬 */
+    height: 20rem; /* 圓形的高 */
+    border-radius: 50%; /* 將形狀設為圓形 */
+    overflow: hidden; /* 隱藏超出邊界的部分 */
+    border: 5px solid #333; /* 外框顏色和寬度 */
+    display: flex;
+    align-items: center; /* 圖片垂直置中 */
+    justify-content: center; /* 圖片水平置中 */
+  }
+
+  /* 圓形內的圖片 */
+  .circle img {
+    width: 100%; /* 圖片完全填充圓形 */
+    height: 100%;
+    object-fit: cover; /* 保持圖片比例 */
+  }
+</style>
+</head>
+<body>
+
+<div class="circle-container">
+  <div class="circle"><img src="test.jpg" alt="Image 1"></div>
+  <div class="circle"><img src="test.jpg" alt="Image 2"></div>
+  <div class="circle"><img src="test.jpg" alt="Image 3"></div>
+</div>
+
+</body>
+</html>
