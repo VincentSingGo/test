@@ -66,11 +66,11 @@ function openPopup(portfolioNumber) {
   const popupImage = document.getElementById("popup-image");
 
   if (portfolioNumber === 1) {
-    popupImage.src = "./qqq.png";
+    popupImage.src = "./pic/肌肉運動按摩_底層.png";
   } else if (portfolioNumber === 2) {
-    popupImage.src = "./main.png";
+    popupImage.src = "./pic/身體平衡整復_底層.png";
   } else if (portfolioNumber === 3) {
-    popupImage.src = "./sss.png";
+    popupImage.src = "./pic/敬請期待_底層.png";
   }
 
   document.getElementById("popup").style.display = "flex";
